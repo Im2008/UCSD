@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Basic Units: */
+        .pixels { font-size: 32px }
+        .percentage { font-size: 150%; }
+        .ems { font-size: 2em; }
+
+        /* Color Values: */
+        .predefined { background-color: orange}
+        .rgb { background-color: rgb(39, 167, 39)}
+        .rgba { background-color: rgba(236, 36, 36, 0.575)}
+
+        /* CSS Margins */
+        div { margin-top: 10px; height: 60px; }
+        .one { border: 2px dotted blue }
+            /* Individual */
+        .two {
+            margin-top: 10px;
+            margin-right: 15px;
+            margin-bottom: 20px;
+            margin-left: 25px;
+        }
+            /* Customizable */
+        .three { margin: 5px 15px 20px 25px; }
+        
+
+        /* CSS Paddings */
+        div { border: 1px dashed #000000; margin-top: 10px;}
+        .one1 { padding: 20px; }
+            /* Individual */
+        .two1 {
+            padding-top: 10px;
+            padding-right: 15px;
+            padding-bottom: 20px;
+            padding-left: 25px;
+        }
+            /* Customizable */
+        .three1 { padding: 5px 15px 20px 25px; }
+        
+
+        /* CSS Width and Height */
+        div { border: 1px dashed blue; margin-top: 10px;}
+        .one2 {
+            width: 100px;
+            height: 100px;
+        }
+            /* Individual */
+        .two2 {
+            width: 75%;
+            height: 10em;
+        }
+
+        /* CSS with backgrounds */
+        div { margin-top: 10px; height: 60px; border: 2px double blue;}
+        .one3 { background-color: yellow; }
+    </style>
+    <style>
+        .one4 {
+            font-size: 2em;
+            font-family: "Georgia", serif;
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <p class="pixels"> Huge Text with font size = 32 px</p>
+    <p class="predefined"> text that is highlighted in orange</p>
+    <div class="one">Text that has a box and is blue</div>
+    <div class="one1"> Text that has a box and is blue with padding</div>
+    <div class="one2"> Text in a box that has its box scaled</div>
+    <div class="one3"> Text in a box that has its margin colored in</div>
+    <div class="one4"> Style</div>
+</body>
+</html>
