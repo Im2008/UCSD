@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <button id = "myButton"> Button Placeholder</button>
     <script>
 //Javascript Variable Declaration and Data Types
         console.log("Hello World");
@@ -53,12 +54,14 @@
         let person = {
             name: "Ian Manangan",
             age: 15,
+            gender: "male",
             sayHello: function() {
                 console.log("Hello my name is " + this.name)
             }
         };
 
         console.log(person.name); //calls for the person name in the variable above
+        console.log(person.gender); //calls for the persons gender in the variable above
         console.log(person.age); //calls for the person age in the variable above
         person.sayHello();
 
@@ -78,6 +81,19 @@
         for (let i = 0; i < 10; i++) {
             console.log(i);
         }
+
+
+//Javascript Events
+
+        //get the button element by its id
+        let button = document.querySelector("myButton");
+
+
+        //Add a click event listener to the button
+        button.addEventListener("click", function(){
+            button.innerHTML = "I was clicked";
+
+        });
     </script>
 </body>
 </html>
