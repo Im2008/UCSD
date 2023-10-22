@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//Javascript Variable Declaration and Data Types
+        console.log("Hello World");
+        console.log(5);
+        console.log(true);
+
+        let x = 1;
+        console.log(x);
+
+        let y = null;
+        console.log(y);
+
+        let z;
+        console.log(z); //makes "z" undefined
+
+
+//Javascript Operators
+        let a = 2;
+        let b = 3;
+        console.log(a + b); //output is 5
+        a += 4; //assignment operator += assigns value to a
+        console.log(a)
+        console.log(a > b)
+        console.log(x < y || x > y) //true (logical operator || combines conditions)
+
+        
+//Javascript Arrays
+        let chickens = ["chicken", "rooster", "egg"]
+
+        console.log(chickens); //outputs everything including the brackets
+
+        console.log(chickens[0]); //index 0 will output chicken
+
+
+//Javascript Custom Functions
+        function addNumbers(num1, num2) {
+            return num1 + num2
+        }
+        console.log(addNumbers(5,10)); // equals 15
+        console.log(addNumbers(2,3)); //equals 5
+
+
+//Javascript Objects
+        let person = {
+            name: "Ian Manangan",
+            age: 15,
+            sayHello: function() {
+                console.log("Hello my name is " + this.name)
+            }
+        };
+
+        console.log(person.name); //calls for the person name in the variable above
+        console.log(person.age); //calls for the person age in the variable above
+        person.sayHello();
+
+
+//Javascript Conditionals (if/else statements)
+        c = 2
+        d = 1
+
+        if (d < c) {
+            console.log("false")
+        } else if (c < d) {
+            console.log("true")
+        }
+
+
+//Javascript Loops
+        for (let i = 0; i < 10; i++) {
+            console.log(i);
+        }
+    </script>
+</body>
+</html>
