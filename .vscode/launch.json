@@ -30,6 +30,20 @@
             "request": "launch",
             "name": "Open Week_4_project.html",
             "file": "c:\\Users\\ianm0\\UCSD\\Week 4\\Week_4_project.html"
+        },
+
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "Open jquery_google_cdn.html",
+            "file": "c:\\Users\\ianm0\\UCSD\\Week 5\\jquery_google_cdn.html"
+        },
+
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "Open Week_5_Part2.html",
+            "file": "c:\\Users\\ianm0\\UCSD\\Week 5\\Week_5_Part2.html"
         }
     ]
 }

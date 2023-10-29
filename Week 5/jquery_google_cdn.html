@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <p> Paragraph </p>
+    <p id="test-id">ID Selector</p>
+    <p class="real class">Class Selector</p>
+    <div class="foo">
+        <p>This is a DDV with class "foo" and a P element inside</p>
+    </div>
+    <div id="#test-id" class="foo">
+        <h1 class="bar"> This is a DDV with class "fo" and an H1 elemtn with class "bar" inside</h1>
+    </div>
+    <h1> This is an H1 element without class "bar".</h1>
+    
+    <br><hr>
+
+    <!--SEPARATE FROM UP ABOVE (1)-->
+    <!--SEPARATE FROM UP ABOVE (1)-->
+
+    <p id="p1">This is a paragraph element</p>
+    <p id="p2">This is another paragraph element</p>
+
+    <script>
+        $(document).ready(function(){
+            console.log ('jQuery JavaScript library is loaded from Google CDN!');
+            $('p').css('background-color', 'red');
+            $('#test-id').css('background-color', 'orange');
+            $('.real-class').css('background-color', 'green');
+            $('div.foo').has('p').css('border', '1px solid black');
+            $('h1').not('bar').css('background-color', 'blue');
+        });
+
+        //THIS IS SEPARATE FROM UP ABOVE (1)
+        //THIS IS SEPARATE FROM UP ABOVE (1)
+
+        $(document).ready(function(){
+            // Select the element with id "p1" and change its background color to grey
+            $('p#p1').css('background-color','grey');
+
+            $('p#p2').css({
+                'background-color': 'pink',
+                'font-size': '20px',
+                'color': 'black'
+            });
+
+        });
+
+    </script>
+</body>
+</html>
