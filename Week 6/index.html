@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <style>
+        .carousel img {
+            height: 300px;
+            object-fit:cover;
+            object-position: center;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Top navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main role="main">
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide mb-5" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://www.w3schools.com/bootstrap5/la.jpg" alt="Los Angeles" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block text-start">
+                        <h3>Los Angeles</h3>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p>Integer tincidunt est vitae viverra blandit. Nunc pellentesque, risus in fringilla tincidunt, lectus magna aliquam nulla, id posuere velit velit vel est. Aliquam erat volutpat. In euismod, mauris id volutpat commodo, quam leo sollicitudin ante, eu aliquam nibh sem eu dui. </p>
+                        <p><a class="btn btn btn-primary" href="#" role="button">Go to Los Angeles</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.w3schools.com/bootstrap5/chicago.jpg" alt="Chicago" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block text-center">
+                        <h3>Chicago</h3>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer euismod velit vel tellus accumsan, ac tristique magna luctus. Sed sit amet lacinia diam. Fusce facilisis, sem non blandit lobortis, diam purus aliquet nulla, eget luctus justo elit in diam. </p>
+                        <p><a class="btn btn btn-primary" href="#" role="button">Go to Chicago</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.w3schools.com/bootstrap5/ny.jpg" alt="New York" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block text-end">
+                        <h3>New York</h3>
+                        <p>Aliquam erat volutpat. Maecenas ac malesuada ex. Nulla tincidunt pharetra elit, et porta magna pharetra eu. In egestas lacus vel nunc accumsan, vel pellentesque justo rutrum.</p>
+                        <p>Proin egestas, massa vitae mollis iaculis, enim eros tincidunt ex, vel egestas lectus magna in quam. Sed vel elit id velit ullamcorper pellentesque. Nam varius, orci ac egestas malesuada, erat elit auctor lectus, quis placerat dui dui eu libero. Sed congue egestas varius. Sed ac erat risus. Integer vulputate risus nulla, id consectetur eros tristique in.</p>
+                        <p><a class="btn btn btn-primary" href="#" role="button">Go to New York</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- Grid System -->
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-sm-3">
+                    <div class="text-center">
+                        <img class="rounded-circle" src="https://www.w3schools.com/bootstrap5/paris.jpg" alt="A photo of Paris" width="140" height="140">
+                    </div>
+                    <h2>Heading</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                </div>
+                <div class="col-sm-3">
+                    <div class="text-center">
+                        <img class="rounded-circle" src="https://www.w3schools.com/bootstrap5/paris.jpg" alt="A photo of Paris" width="140" height="140">
+                    </div>
+                    <h2>Heading</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                </div>
+                <div class="col-sm-3">
+                    <div class="text-center">
+                        <img class="rounded-circle" src="https://www.w3schools.com/bootstrap5/paris.jpg" alt="A photo of Paris" width="140" height="140">
+                    </div>
+                    <h2>Heading</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                </div>
+                <div class="col-sm-3">
+                    <div class="text-center">
+                        <img class="rounded-circle" src="https://www.w3schools.com/bootstrap5/paris.jpg" alt="A photo of Paris" width="140" height="140">
+                    </div>
+                    <h2>Heading</h2>
+                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                    <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+                </div>                                
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Branch Offices</h3>
+                        <table class="table table-striped table-bordered table-hover table-responsive">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Location</th>
+                                    <th>Address</th>
+                                    <th>Phone</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>New York</td>
+                                    <td>123 Main St, New York, NY 10001</td>
+                                    <td>(123) 456-7890</td>
+                                </tr>
+                                <tr>
+                                    <td>Los Angeles</td>
+                                    <td>456 Ocean Ave, Los Angeles, CA 90001</td>
+                                    <td>(987) 654-3210</td>
+                                </tr>
+                                <tr>
+                                    <td>Chicago</td>
+                                    <td>789 Lake Shore Dr, Chicago, IL 60601</td>
+                                    <td>(321) 987-6540</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+                <div class="col-sm-6">
+                    <h3>Contact Us</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <span class="mb-3 mb-md-0 text-muted">© 2023 Your Company, Inc</span>
+            </footer>
+        </div>
+    </main>
+</body>
+</html>
