@@ -1,13 +1,16 @@
 .base {
-    font-size: 26pt;
+    font-size: 26px;
     text-shadow: 1px 1px lightslategrey;
     font-family: Arial;
+    font-stretch: normal;
+    font-variant: normal;
 }
 
 .helper {
     color: lightgray;
     text-shadow: 1px 1px lightslategrey;
     font-size: 12px;
+    font-variant: normal;
 }
 
 hr {
@@ -20,6 +23,8 @@ hr {
 li {
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 1px 1px 1px grey;
+    font-stretch: normal;
+    font-variant: normal;
 }
 
 section {
@@ -40,4 +45,15 @@ img {
 h3 {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 25px;
+    font-variant: small-caps;
+    font-stretch: normal;
+}
+
+header, .base {
+    font-weight: 700;
+    font-size: 20px;
+    color: darkgreen;
+    text-shadow: 2px 1px 3px lightgreen;
+    font-stretch: normal;
+    font-variant: normal;
 }
