@@ -57,3 +57,7 @@ header, .base {
     font-stretch: normal;
     font-variant: normal;
 }
+
+.box {
+    display: flex;
+}
