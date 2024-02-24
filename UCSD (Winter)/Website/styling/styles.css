@@ -7,12 +7,15 @@
 }
 
 .helper {
-    color: lightgray;
-    text-shadow: 1px 1px lightslategrey;
-    font-size: 12px;
+    color: darkgreen;
+    text-shadow: 1px 1px lavenderblush;
+    font-size: 13px;
     font-variant: normal;
 }
 
+body {
+    background-color: lavender;
+}
 hr {
     border-width: 3px;
     border-color: black;
@@ -37,8 +40,9 @@ section {
 }
 
 img {
+    border-style: double;
     border-width: thick;
-    box-shadow: 2px 2px 4px gray;
+    box-shadow: 2px 2px 7px gray;
     border-radius: 10%
 }
 
@@ -49,15 +53,36 @@ h3 {
     font-stretch: normal;
 }
 
+aside {
+    float: center;
+    text-align: center;
+}
+
+video {
+    border-radius: 10%;
+    border-style: double;
+    box-shadow: 2px 2px 7px gray;
+}
 header, .base {
     font-weight: 700;
     font-size: 20px;
     color: darkgreen;
-    text-shadow: 2px 1px 3px lightgreen;
+    text-shadow: 2px 1px 3px lavenderblush;
     font-stretch: normal;
     font-variant: normal;
 }
 
 .box {
     display: flex;
+}
+
+.column1 {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.column2 {
+    float: right;
+    text-align: center;
 }
