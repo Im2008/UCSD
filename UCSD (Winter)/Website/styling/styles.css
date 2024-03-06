@@ -86,3 +86,10 @@ header, .base {
     float: right;
     text-align: center;
 }
+
+.gallery {
+    border-style: inset double;
+    border-width: thick;
+    box-shadow: 2px 2px 7px gray;
+    border-radius: 2%
+}
