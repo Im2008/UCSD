@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styling/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/main.js"></script>
     <title>Homepage</title>
 </head>
 <body>
@@ -42,6 +44,17 @@
         <img src="images/WatchingTV.jpg" width="250px" height="200px" class="float-right">
     </div>
     <br>
+    <div class="survey">
+        <label for="checkbox1">Would you like to Subscribe to our Mailing List?</label>
+        <br>
+        <input type="checkbox" id="checkbox1" name="CheckBox" value="Show Alert" onclick="usersYes()">
+        <label for="checkbox1"> Yes </label>
+        <br>
+        <input type="checkbox" id="checkbox2" name="CheckBox" value="Show Alert" onclick="usersNo()">
+        <label for="checkbox1"> No </label>
+        <p>Mailing List:</p>
+        <p id="mail"></p>
+    </div>
     <hr>
     <br>
     <div class="box">
@@ -54,7 +67,7 @@
         </div>
         <div class="column2">
             <figure>
-                <img src = "images/Hello.jpg" width="150px">
+                <img onmouseover ="bigImage(this)" onmouseout="regularImage(this)" src = "images/Hello.jpg" width="150px">
                 <figcaption class="helper">
                     This is an image of an emoji saying hello!
                 </figcaption>
